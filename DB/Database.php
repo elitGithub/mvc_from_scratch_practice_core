@@ -4,6 +4,7 @@
 namespace eligithub\phpmvc\DB;
 
 
+use eligithub\phpmvc\Application;
 use PDO;
 use PDOStatement;
 
