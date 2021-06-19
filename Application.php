@@ -1,6 +1,7 @@
 <?php
 
 namespace eligithub\phpmvc;
+
 use eligithub\phpmvc\DB\Database;
 use Exception;
 
@@ -10,6 +11,11 @@ use Exception;
  */
 class Application
 {
+	public const EVENT_BEFORE_REQUEST = 'beforeRequest';
+	public const EVENT_AFTER_REQUEST = 'afterRequest';
+
+	protected array $eventListeners = [];
+
 	public static string $ROOT_DIR;
 	public static Application $app;
 
@@ -108,5 +114,10 @@ class Application
 	{
 		$this->user = null;
 		$this->session->remove('user');
+	}
+
+	public function on($eventName, $callback)
+	{
+		$this->eventListeners[$eventName][] = $callback;
 	}
 }
