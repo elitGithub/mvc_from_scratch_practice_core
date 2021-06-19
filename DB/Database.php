@@ -31,8 +31,8 @@ class Database
 
 	public function applyMigrations()
 	{
-		$this->currentBatch();
 		$this->createMigrationsTable();
+		$this->currentBatch();
 		$appliedMigrations = $this->getAppliedMigrations();
 
 		$files = scandir(Application::$ROOT_DIR . DIRECTORY_SEPARATOR . 'migrations');
