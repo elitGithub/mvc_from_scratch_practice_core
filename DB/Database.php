@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Core\DB;
+namespace eligithub\phpmvc\DB;
 
 
 use PDO;
@@ -9,7 +9,7 @@ use PDOStatement;
 
 /**
  * Class Database
- * @package App\Core\DB
+ * @package eligithub\phpmvc\DB
  */
 class Database
 {

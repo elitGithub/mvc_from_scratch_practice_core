@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Core;
+namespace eligithub\phpmvc;
 
 
 class Session

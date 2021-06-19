@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Core\Forms;
+namespace eligithub\phpmvc\Forms;
 
 
-use App\Core\Model;
+use eligithub\phpmvc\Model;
 
 abstract class BaseField implements \Stringable
 {

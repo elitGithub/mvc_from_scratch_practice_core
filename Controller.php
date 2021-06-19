@@ -1,13 +1,13 @@
 <?php
 
 
-namespace App\Core;
+namespace eligithub\phpmvc;
 
-use App\Core\Middlewares\BaseMiddleware;
+use eligithub\phpmvc\Middlewares\BaseMiddleware;
 
 /**
  * Class Controller
- * @package App\Core
+ * @package eligithub\phpmvc
  */
 class Controller
 {

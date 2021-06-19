@@ -1,10 +1,10 @@
 <?php
 
 // @TODO: I know laravel is smarter than this. Maybe do something similar using DBAL?
-namespace App\Core;
+namespace eligithub\phpmvc;
 
 
-use App\Core\DB\Database;
+use eligithub\phpmvc\DB\Database;
 
 abstract class Migration
 {

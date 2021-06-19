@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Core\Helpers;
+namespace eligithub\phpmvc\Helpers;
 
 
 class ResponseCodes

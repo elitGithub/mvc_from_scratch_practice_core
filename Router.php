@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Core;
+namespace eligithub\phpmvc;
 
 use App\Controllers\AuthController;
 use App\Controllers\SiteController;
-use App\Core\Exceptions\NotFoundException;
+use eligithub\phpmvc\Exceptions\NotFoundException;
 use JetBrains\PhpStorm\Pure;
 
 /**
  * Class Router
- * @package App\Core
+ * @package eligithub\phpmvc
  */
 class Router
 {

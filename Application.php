@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Core;
-use App\Core\DB\Database;
+namespace eligithub\phpmvc;
+use eligithub\phpmvc\DB\Database;
 use Exception;
 
 /**
  * Class Application
- * @package App\Core
+ * @package eligithub\phpmvc
  */
 class Application
 {

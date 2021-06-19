@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Core\Exceptions;
+namespace eligithub\phpmvc\Exceptions;
 
 
-use App\Core\Helpers\ResponseCodes;
+use eligithub\phpmvc\Helpers\ResponseCodes;
 use Exception;
 
 class ForbiddenException extends Exception

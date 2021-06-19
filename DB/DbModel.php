@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Core\DB;
+namespace eligithub\phpmvc\DB;
 
 
-use App\Core\Application;
-use App\Core\Model;
+use eligithub\phpmvc\Application;
+use eligithub\phpmvc\Model;
 use PDOException;
 use PDOStatement;
 

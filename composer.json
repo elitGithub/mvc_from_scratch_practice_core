@@ -6,5 +6,10 @@
             "email": "elit1989@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "eligithub\\phpmvc\\": "./"
+        }
+    },
     "require": {}
 }

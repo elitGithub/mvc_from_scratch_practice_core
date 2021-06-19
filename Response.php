@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Core;
+namespace eligithub\phpmvc;
 
 /**
  * Class Response
- * @package App\Core
+ * @package eligithub\phpmvc
  */
 class Response
 {
