@@ -83,21 +83,13 @@ class Router
 	 * @TODO: Maybe make this more diverse/use separate files, as in a larger application, this thing will become a
 	 *     monster.
 	 */
-	public function registerRoutes()
+	public function registerRoutes(array $routes = [])
 	{
-		$this->get('/', [SiteController::class, 'home']);
-
-		$this->get('/contact', [SiteController::class, 'contact']);
-		$this->post('/contact', [SiteController::class, 'contact']);
-
-		$this->get('/login', [AuthController::class, 'login']);
-		$this->post('/login', [AuthController::class, 'login']);
-
-		$this->get('/register', [AuthController::class, 'register']);
-		$this->post('/register', [AuthController::class, 'register']);
-
-		$this->get('/logout', [AuthController::class, 'logout']);
-
-		$this->get('/profile', [AuthController::class, 'profile']);
+		// user defined routes
+		if (!empty($routes)) {
+			foreach ($routes as $method => $route) {
+				$this->{$method}($route['path'], $route['callback']);
+			}
+		}
 	}
 }
